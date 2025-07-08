@@ -65,8 +65,15 @@ namespace GUI_QLVT
                 this.Hide();
                 frmMain main = new frmMain();
                 main.ShowDialog();
-                
+
             }
+        }
+
+        private void lblQuenMatKhau_Click(object sender, EventArgs e)
+        {
+            frmQuenMatKhau qmk = new frmQuenMatKhau();
+            qmk.Show();
+            this.Hide();
         }
     }
 }

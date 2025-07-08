@@ -171,7 +171,7 @@
             btnDoiMatKhau.FillColor = Color.DeepSkyBlue;
             btnDoiMatKhau.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnDoiMatKhau.ForeColor = Color.White;
-            btnDoiMatKhau.Location = new Point(925, 640);
+            btnDoiMatKhau.Location = new Point(992, 633);
             btnDoiMatKhau.Margin = new Padding(3, 4, 3, 4);
             btnDoiMatKhau.Name = "btnDoiMatKhau";
             btnDoiMatKhau.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -192,7 +192,7 @@
             btnThoat.FillColor = Color.DeepSkyBlue;
             btnThoat.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnThoat.ForeColor = Color.White;
-            btnThoat.Location = new Point(1209, 640);
+            btnThoat.Location = new Point(1276, 633);
             btnThoat.Margin = new Padding(3, 4, 3, 4);
             btnThoat.Name = "btnThoat";
             btnThoat.ShadowDecoration.CustomizableEdges = customizableEdges4;

@@ -15,25 +15,21 @@ namespace GUI_QLVT
         public frmCho()
         {
             InitializeComponent();
-            progressBar.Style = ProgressBarStyle.Marquee;
-            progressBar.MarqueeAnimationSpeed = 30;
+            progressBar1.Style = ProgressBarStyle.Marquee;
+            progressBar1.MarqueeAnimationSpeed = 30;
             Task.Delay(3000).ContinueWith(t =>
             {
                 if (this.IsHandleCreated && !this.IsDisposed)
                 {
                     this.Invoke(new Action(() =>
                     {
+                        frmLogin login = new frmLogin();
+                        login.Show();
+
                         this.Hide();
-                        frmLogin dn = new frmLogin();
-                        dn.ShowDialog();
                     }));
                 }
             });
-        }
-
-        private void frmCho_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

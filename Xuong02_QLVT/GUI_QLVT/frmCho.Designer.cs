@@ -28,30 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            progressBar = new ProgressBar();
+            pictureBox1 = new PictureBox();
+            progressBar1 = new ProgressBar();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // progressBar
+            // pictureBox1
             // 
-            progressBar.Location = new Point(-1, 850);
-            progressBar.Name = "progressBar";
-            progressBar.Size = new Size(1268, 46);
-            progressBar.TabIndex = 0;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Dock = DockStyle.Top;
+            pictureBox1.Image = Properties.Resources.background;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1563, 858);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Dock = DockStyle.Top;
+            progressBar1.Location = new Point(0, 858);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(1563, 47);
+            progressBar1.TabIndex = 5;
             // 
             // frmCho
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.background;
-            ClientSize = new Size(1264, 961);
-            Controls.Add(progressBar);
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(1563, 912);
+            Controls.Add(progressBar1);
+            Controls.Add(pictureBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmCho";
             Text = "frmCho";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private ProgressBar progressBar;
+        private PictureBox pictureBox1;
+        private ProgressBar progressBar1;
     }
 }

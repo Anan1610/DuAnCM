@@ -10,6 +10,9 @@
     <Compile Update="frmChiTietDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmChiTietPhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmCho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -50,6 +53,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmQuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmVoucher.cs">

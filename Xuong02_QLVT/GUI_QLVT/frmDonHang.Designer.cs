@@ -468,7 +468,7 @@
             guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges28;
             guna2GroupBox2.Size = new Size(1671, 670);
             guna2GroupBox2.TabIndex = 17;
-            guna2GroupBox2.Text = "Danh Sách Loại Vật Tư";
+            guna2GroupBox2.Text = "Danh Sách Đơn Hàng";
             // 
             // dgvDSDon
             // 

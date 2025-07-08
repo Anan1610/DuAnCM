@@ -190,7 +190,7 @@
             rdoTamNgung.Cursor = Cursors.Hand;
             rdoTamNgung.Font = new Font("Segoe UI", 12F);
             rdoTamNgung.ForeColor = Color.Black;
-            rdoTamNgung.Location = new Point(1504, 206);
+            rdoTamNgung.Location = new Point(1481, 204);
             rdoTamNgung.Name = "rdoTamNgung";
             rdoTamNgung.Size = new Size(133, 32);
             rdoTamNgung.TabIndex = 25;
@@ -245,14 +245,14 @@
             // 
             txtMatKhau.Location = new Point(1272, 137);
             txtMatKhau.Name = "txtMatKhau";
-            txtMatKhau.Size = new Size(365, 39);
+            txtMatKhau.Size = new Size(342, 39);
             txtMatKhau.TabIndex = 16;
             // 
             // txtChucVu
             // 
             txtChucVu.Location = new Point(1272, 72);
             txtChucVu.Name = "txtChucVu";
-            txtChucVu.Size = new Size(365, 39);
+            txtChucVu.Size = new Size(342, 39);
             txtChucVu.TabIndex = 12;
             // 
             // txtSoDienThoai
@@ -294,7 +294,7 @@
             // 
             // txtTimKiem
             // 
-            txtTimKiem.Location = new Point(1085, 56);
+            txtTimKiem.Location = new Point(1153, 55);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.Size = new Size(389, 39);
             txtTimKiem.TabIndex = 30;
@@ -312,7 +312,7 @@
             btnTim.Font = new Font("Segoe UI", 9F);
             btnTim.ForeColor = Color.GreenYellow;
             btnTim.Image = Properties.Resources.search;
-            btnTim.Location = new Point(1491, 56);
+            btnTim.Location = new Point(1559, 55);
             btnTim.Name = "btnTim";
             btnTim.PressedColor = Color.BlanchedAlmond;
             btnTim.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -354,7 +354,7 @@
             guna2GroupBox3.Margin = new Padding(3, 5, 3, 5);
             guna2GroupBox3.Name = "guna2GroupBox3";
             guna2GroupBox3.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2GroupBox3.Size = new Size(1673, 369);
+            guna2GroupBox3.Size = new Size(1652, 369);
             guna2GroupBox3.TabIndex = 12;
             guna2GroupBox3.Text = "Thông Tin Nhân Viên";
             // 
@@ -478,9 +478,9 @@
             guna2GroupBox2.Margin = new Padding(3, 5, 3, 5);
             guna2GroupBox2.Name = "guna2GroupBox2";
             guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2GroupBox2.Size = new Size(1668, 672);
+            guna2GroupBox2.Size = new Size(1652, 672);
             guna2GroupBox2.TabIndex = 13;
-            guna2GroupBox2.Text = "Danh Sách Loại Vật Tư";
+            guna2GroupBox2.Text = "Danh Sách Nhân Viên";
             // 
             // dgvDanhSachNhanVien
             // 
@@ -514,7 +514,7 @@
             dgvDanhSachNhanVien.RowHeadersVisible = false;
             dgvDanhSachNhanVien.RowHeadersWidth = 51;
             dgvDanhSachNhanVien.RowTemplate.Height = 25;
-            dgvDanhSachNhanVien.Size = new Size(1668, 529);
+            dgvDanhSachNhanVien.Size = new Size(1652, 529);
             dgvDanhSachNhanVien.TabIndex = 2;
             dgvDanhSachNhanVien.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvDanhSachNhanVien.ThemeStyle.AlternatingRowsStyle.Font = null;

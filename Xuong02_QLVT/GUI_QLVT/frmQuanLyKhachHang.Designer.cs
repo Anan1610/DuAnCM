@@ -383,11 +383,11 @@
             guna2GroupBox2.CustomizableEdges = customizableEdges27;
             guna2GroupBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
             guna2GroupBox2.ForeColor = Color.Black;
-            guna2GroupBox2.Location = new Point(1, 2);
+            guna2GroupBox2.Location = new Point(1, -1);
             guna2GroupBox2.Margin = new Padding(3, 4, 3, 4);
             guna2GroupBox2.Name = "guna2GroupBox2";
             guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            guna2GroupBox2.Size = new Size(1643, 318);
+            guna2GroupBox2.Size = new Size(1643, 321);
             guna2GroupBox2.TabIndex = 37;
             guna2GroupBox2.Text = "Thông tin khách hàng";
             // 
@@ -495,7 +495,7 @@
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges30;
             guna2GroupBox1.Size = new Size(1637, 677);
             guna2GroupBox1.TabIndex = 38;
-            guna2GroupBox1.Text = "Danh Sách Vật Tư";
+            guna2GroupBox1.Text = "Danh Sách Khách Hàng";
             // 
             // dgvDSKH
             // 

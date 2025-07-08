@@ -305,7 +305,7 @@
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2GroupBox1.Size = new Size(1663, 369);
             guna2GroupBox1.TabIndex = 18;
-            guna2GroupBox1.Text = "Thông Tin Loại Vật Tư";
+            guna2GroupBox1.Text = "Thông Tin Hóa Đơn";
             // 
             // btnLamMoi
             // 

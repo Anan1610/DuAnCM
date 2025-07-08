@@ -33,13 +33,14 @@ namespace GUI_QLVT
                 btnHome.Visible = true;
                 btnQLVatTu.Visible = true;
                 btnQLLoaiVatTu.Visible = true;
-                btnQLTTVatTu.Visible = true;
+                //btnQLTTVatTu.Visible = true;
                 btnQLKhachHang.Visible = true;
                 btnQLNhanVien.Visible = true;
                 btnQLNhaCungCap.Visible = true;
                 btnHoaDon.Visible = true;
                 btnQLDonHang.Visible = true;
                 btnDoiMatKhau.Visible = true;
+                btnQLVoucher.Visible = true;
 
                 if (AuthUtil.user.VaiTro == false)
                 {
@@ -51,13 +52,14 @@ namespace GUI_QLVT
                 btnHome.Visible = true;
                 btnQLVatTu.Visible = false;
                 btnQLLoaiVatTu.Visible = false;
-                btnQLTTVatTu.Visible = false;
+                //btnQLTTVatTu.Visible = false;
                 btnQLKhachHang.Visible = false;
                 btnQLNhanVien.Visible = false;
                 btnQLNhaCungCap.Visible = false;
                 btnHoaDon.Visible = false;
                 btnQLDonHang.Visible = false;
                 btnDoiMatKhau.Visible = false;
+                btnQLVoucher.Visible = false;
             }
         }
         private Form currentFormChild;
@@ -151,10 +153,15 @@ namespace GUI_QLVT
             openChildForm(new frmVoucher());
             lblTenForm.Text = "QUẢN LÍ VOUCHER";
         }
+        private void btnQLPhieuNhap_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmVoucher());
+            lblTenForm.Text = "QUẢN LÍ PHIẾU NHẬP KHO";
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
+        }  
     }
 }
