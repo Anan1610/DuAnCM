@@ -50,18 +50,42 @@ namespace GUI_QLVT
         private void btnGui_Click(object sender, EventArgs e)
         {
             string input = txtInput.Text.Trim();
-            if (string.IsNullOrEmpty(input)) return;
+            if (string.IsNullOrEmpty(input))
+                return;
 
+            // Hiển thị câu hỏi lên listbox
             lstChat.Items.Add("Bạn: " + input);
+
+            // Gửi qua chatbot xử lý
             string response = BUSChatbot.HandleMessage(input);
             lstChat.Items.Add("Bot: " + response);
 
+            // Xử lý hiển thị dữ liệu
             if (BUSChatbot.LastResult != null)
             {
+                dgvKetQua.AutoGenerateColumns = true;
                 dgvKetQua.DataSource = BUSChatbot.LastResult;
-                BUSChatbot.LastResult = null;
+                dgvKetQua.ColumnHeadersVisible = true;
+                BUSChatbot.LastResult = null; // reset
+            }
+            else if (BUSChatbot.LastDataSet != null && BUSChatbot.LastDataSet.Tables.Count > 0)
+            {
+                dgvKetQua.AutoGenerateColumns = true;
+                dgvKetQua.DataSource = BUSChatbot.LastDataSet.Tables[0];  // Hiện bảng đầu tiên
+                dgvKetQua.ColumnHeadersVisible = true;
+                BUSChatbot.LastDataSet = null; // reset
+            }
+            else
+            {
+                // Không có dữ liệu để hiển thị bảng
+                dgvKetQua.DataSource = null;
+                dgvKetQua.Refresh();
             }
 
+            // Auto scroll cho list chat
+            lstChat.TopIndex = lstChat.Items.Count - 1;
+
+            // Xóa input
             txtInput.Clear();
         }
     }

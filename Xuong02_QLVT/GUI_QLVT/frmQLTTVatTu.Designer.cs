@@ -64,9 +64,15 @@
             label10 = new Label();
             label7 = new Label();
             txtTenTrangThai = new Guna.UI2.WinForms.Guna2TextBox();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
             guna2GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvDSQLTTVatTu).BeginInit();
             guna2GroupBox1.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // guna2GroupBox2
@@ -79,7 +85,7 @@
             guna2GroupBox2.CustomizableEdges = customizableEdges5;
             guna2GroupBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
             guna2GroupBox2.ForeColor = Color.Black;
-            guna2GroupBox2.Location = new Point(6, 236);
+            guna2GroupBox2.Location = new Point(0, 0);
             guna2GroupBox2.Margin = new Padding(3, 4, 3, 4);
             guna2GroupBox2.Name = "guna2GroupBox2";
             guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -119,7 +125,7 @@
             dgvDSQLTTVatTu.RowHeadersVisible = false;
             dgvDSQLTTVatTu.RowHeadersWidth = 51;
             dgvDSQLTTVatTu.RowTemplate.Height = 25;
-            dgvDSQLTTVatTu.Size = new Size(1636, 529);
+            dgvDSQLTTVatTu.Size = new Size(1643, 529);
             dgvDSQLTTVatTu.TabIndex = 2;
             dgvDSQLTTVatTu.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvDSQLTTVatTu.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -201,11 +207,11 @@
             guna2GroupBox1.CustomizableEdges = customizableEdges19;
             guna2GroupBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
             guna2GroupBox1.ForeColor = Color.Black;
-            guna2GroupBox1.Location = new Point(3, 1);
+            guna2GroupBox1.Location = new Point(0, 0);
             guna2GroupBox1.Margin = new Padding(3, 4, 3, 4);
             guna2GroupBox1.Name = "guna2GroupBox1";
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2GroupBox1.Size = new Size(1643, 227);
+            guna2GroupBox1.Size = new Size(1643, 681);
             guna2GroupBox1.TabIndex = 8;
             guna2GroupBox1.Text = "Thông Tin Trạng Thái Vật Tư";
             // 
@@ -221,7 +227,7 @@
             txtMaTrangThai.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMaTrangThai.Font = new Font("Segoe UI", 9F);
             txtMaTrangThai.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaTrangThai.Location = new Point(271, 71);
+            txtMaTrangThai.Location = new Point(592, 189);
             txtMaTrangThai.Margin = new Padding(3, 5, 3, 5);
             txtMaTrangThai.Name = "txtMaTrangThai";
             txtMaTrangThai.PasswordChar = '\0';
@@ -229,7 +235,7 @@
             txtMaTrangThai.ReadOnly = true;
             txtMaTrangThai.SelectedText = "";
             txtMaTrangThai.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtMaTrangThai.Size = new Size(405, 43);
+            txtMaTrangThai.Size = new Size(708, 43);
             txtMaTrangThai.TabIndex = 22;
             // 
             // btnLamMoi
@@ -246,7 +252,7 @@
             btnLamMoi.Font = new Font("Segoe UI", 9F);
             btnLamMoi.ForeColor = Color.Black;
             btnLamMoi.Image = Properties.Resources.refresh;
-            btnLamMoi.Location = new Point(1308, 151);
+            btnLamMoi.Location = new Point(1290, 433);
             btnLamMoi.Margin = new Padding(3, 4, 3, 4);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -269,7 +275,7 @@
             btnXoa.Font = new Font("Segoe UI", 9F);
             btnXoa.ForeColor = Color.Black;
             btnXoa.Image = Properties.Resources.delete;
-            btnXoa.Location = new Point(954, 151);
+            btnXoa.Location = new Point(936, 433);
             btnXoa.Margin = new Padding(3, 4, 3, 4);
             btnXoa.Name = "btnXoa";
             btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges12;
@@ -292,7 +298,7 @@
             btnSua.Font = new Font("Segoe UI", 9F);
             btnSua.ForeColor = Color.Black;
             btnSua.Image = Properties.Resources.repair;
-            btnSua.Location = new Point(600, 151);
+            btnSua.Location = new Point(582, 433);
             btnSua.Margin = new Padding(3, 4, 3, 4);
             btnSua.Name = "btnSua";
             btnSua.ShadowDecoration.CustomizableEdges = customizableEdges14;
@@ -315,7 +321,7 @@
             btnThem.Font = new Font("Segoe UI", 9F);
             btnThem.ForeColor = Color.Black;
             btnThem.Image = Properties.Resources.add;
-            btnThem.Location = new Point(246, 151);
+            btnThem.Location = new Point(228, 433);
             btnThem.Margin = new Padding(3, 4, 3, 4);
             btnThem.Name = "btnThem";
             btnThem.ShadowDecoration.CustomizableEdges = customizableEdges16;
@@ -329,7 +335,7 @@
             label10.AutoSize = true;
             label10.BackColor = Color.White;
             label10.Font = new Font("Segoe UI", 12F);
-            label10.Location = new Point(92, 86);
+            label10.Location = new Point(413, 204);
             label10.Name = "label10";
             label10.Size = new Size(130, 28);
             label10.TabIndex = 17;
@@ -340,7 +346,7 @@
             label7.AutoSize = true;
             label7.BackColor = Color.White;
             label7.Font = new Font("Segoe UI", 12F);
-            label7.Location = new Point(906, 86);
+            label7.Location = new Point(413, 302);
             label7.Name = "label7";
             label7.Size = new Size(131, 28);
             label7.TabIndex = 14;
@@ -357,23 +363,54 @@
             txtTenTrangThai.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenTrangThai.Font = new Font("Segoe UI", 9F);
             txtTenTrangThai.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenTrangThai.Location = new Point(1094, 71);
+            txtTenTrangThai.Location = new Point(592, 287);
             txtTenTrangThai.Margin = new Padding(3, 5, 3, 5);
             txtTenTrangThai.Name = "txtTenTrangThai";
             txtTenTrangThai.PasswordChar = '\0';
             txtTenTrangThai.PlaceholderText = "";
             txtTenTrangThai.SelectedText = "";
             txtTenTrangThai.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            txtTenTrangThai.Size = new Size(407, 43);
+            txtTenTrangThai.Size = new Size(710, 43);
             txtTenTrangThai.TabIndex = 2;
+            // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(1, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1664, 729);
+            tabControl1.TabIndex = 10;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(guna2GroupBox1);
+            tabPage1.Location = new Point(4, 37);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1656, 688);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Thông tin";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(guna2GroupBox2);
+            tabPage2.Location = new Point(4, 37);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1656, 688);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Danh sách";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // frmQLTTVatTu
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1668, 923);
-            Controls.Add(guna2GroupBox2);
-            Controls.Add(guna2GroupBox1);
+            Controls.Add(tabControl1);
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
             Name = "frmQLTTVatTu";
@@ -383,6 +420,9 @@
             ((System.ComponentModel.ISupportInitialize)dgvDSQLTTVatTu).EndInit();
             guna2GroupBox1.ResumeLayout(false);
             guna2GroupBox1.PerformLayout();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -401,5 +441,8 @@
         private Label label10;
         private Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtTenTrangThai;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
     }
 }

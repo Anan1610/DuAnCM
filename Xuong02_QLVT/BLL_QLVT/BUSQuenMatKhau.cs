@@ -50,7 +50,7 @@ namespace BLL_QLVT
         private void SendEmail(string toEmail, string code)
         {
             string fromEmail = "thesadboiz1712@gmail.com";
-            string appPass = "ohlu plkl dttn vlgo";
+            string appPass = "jyrf ilbv uvsk lwnb";
             MailMessage mail = new MailMessage(fromEmail, toEmail, "Mã xác nhận", $"Mã xác nhận của bạn: {code}");
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587)
             {

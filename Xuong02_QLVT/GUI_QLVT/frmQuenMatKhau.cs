@@ -104,5 +104,59 @@ namespace GUI_QLVT
             login.Show();
             this.Close(); // Hoặc về form đăng nhập
         }
+
+        private void frmQuenMatKhau_Load(object sender, EventArgs e)
+        {
+            lblMatKhauMoi.Visible = false;
+            txtMatKhauMoi.Visible = false;
+            lblXacNhanMatKhau.Visible = false;
+            txtXacNhanMatKhau.Visible = false;
+            btnDoiMatKhau.Visible = false;
+            chkHienThi1.Visible = false;
+            chkHienThi2.Visible = false;
+        }
+
+        private void btnXacNhanMa_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text.Trim();
+            string code = txtMaXacNhan.Text.Trim();
+            if (bus.XacNhanMa(email, code))
+            {
+                lblMatKhauMoi.Visible = true;
+                txtMatKhauMoi.Visible = true;
+                lblXacNhanMatKhau.Visible = true;
+                txtXacNhanMatKhau.Visible = true;
+                btnDoiMatKhau.Visible = true;
+                chkHienThi1.Visible = true;
+                chkHienThi2.Visible = true;
+            }
+            else
+            {
+                lblMatKhauMoi.Visible = false;
+                txtMatKhauMoi.Visible = false;
+                lblXacNhanMatKhau.Visible = false;
+                txtXacNhanMatKhau.Visible = false;
+                btnDoiMatKhau.Visible = false;
+                chkHienThi1.Visible = false;
+                chkHienThi2.Visible = false;
+            }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLogin login = new frmLogin();
+            login.Show();
+        }
+
+        private void chkHienThi1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMatKhauMoi.PasswordChar = chkHienThi1.Checked ? '\0' : '*';
+        }
+
+        private void chkHienThi2_CheckedChanged(object sender, EventArgs e)
+        {
+            txtXacNhanMatKhau.PasswordChar = chkHienThi2.Checked ? '\0' : '*';
+        }
     }
 }

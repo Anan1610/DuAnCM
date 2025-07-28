@@ -24,6 +24,8 @@ namespace GUI_QLVT
         private void frmLogin_Load(object sender, EventArgs e)
         {
             panel1.BackColor = Color.FromArgb(180, Color.White);
+            lblQuenMatKhau.MouseHover += lblQuenMatKhau_MouseHover;
+            lblQuenMatKhau.MouseLeave += lblQuenMatKhau_MouseLeave;
         }
 
 
@@ -68,7 +70,16 @@ namespace GUI_QLVT
 
             }
         }
-
+        private void lblQuenMatKhau_MouseHover(object sender, EventArgs e)
+        {
+            lblQuenMatKhau.Cursor = Cursors.Hand; // Đổi con trỏ thành bàn tay
+            lblQuenMatKhau.Font = new Font(lblQuenMatKhau.Font, FontStyle.Underline);
+        }
+        private void lblQuenMatKhau_MouseLeave(object sender, EventArgs e)
+        {
+            lblQuenMatKhau.Font = new Font(lblQuenMatKhau.Font, FontStyle.Regular);
+            lblQuenMatKhau.ForeColor = Color.FromArgb( 128, 255, 255); // Màu mặc định
+        }
         private void lblQuenMatKhau_Click(object sender, EventArgs e)
         {
             frmQuenMatKhau qmk = new frmQuenMatKhau();

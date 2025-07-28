@@ -72,11 +72,11 @@ namespace GUI_QLVT
 
             if (rdoNhanVien.Checked)
             {
-                vaiTro = true;
+                vaiTro = false;
             }
             else
             {
-                vaiTro = false;
+                vaiTro = true;
             }
             bool tinhTrang;
 

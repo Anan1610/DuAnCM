@@ -84,9 +84,15 @@
             btnThem = new Guna.UI2.WinForms.Guna2Button();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             dgvDSKH = new Guna.UI2.WinForms.Guna2DataGridView();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
             guna2GroupBox2.SuspendLayout();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvDSKH).BeginInit();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // btnTimKiem
@@ -137,7 +143,7 @@
             // 
             guna2HtmlLabel15.BackColor = Color.Transparent;
             guna2HtmlLabel15.Font = new Font("Microsoft Sans Serif", 12F);
-            guna2HtmlLabel15.Location = new Point(926, 158);
+            guna2HtmlLabel15.Location = new Point(1056, 396);
             guna2HtmlLabel15.Margin = new Padding(3, 4, 3, 4);
             guna2HtmlLabel15.Name = "guna2HtmlLabel15";
             guna2HtmlLabel15.Size = new Size(81, 27);
@@ -148,7 +154,7 @@
             // 
             guna2HtmlLabel14.BackColor = Color.Transparent;
             guna2HtmlLabel14.Font = new Font("Microsoft Sans Serif", 12F);
-            guna2HtmlLabel14.Location = new Point(484, 149);
+            guna2HtmlLabel14.Location = new Point(437, 551);
             guna2HtmlLabel14.Margin = new Padding(3, 4, 3, 4);
             guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             guna2HtmlLabel14.Size = new Size(70, 27);
@@ -159,7 +165,7 @@
             // 
             guna2HtmlLabel13.BackColor = Color.Transparent;
             guna2HtmlLabel13.Font = new Font("Microsoft Sans Serif", 12F);
-            guna2HtmlLabel13.Location = new Point(484, 82);
+            guna2HtmlLabel13.Location = new Point(535, 217);
             guna2HtmlLabel13.Margin = new Padding(3, 4, 3, 4);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             guna2HtmlLabel13.Size = new Size(145, 27);
@@ -170,7 +176,7 @@
             // 
             guna2HtmlLabel12.BackColor = Color.Transparent;
             guna2HtmlLabel12.Font = new Font("Microsoft Sans Serif", 12F);
-            guna2HtmlLabel12.Location = new Point(49, 149);
+            guna2HtmlLabel12.Location = new Point(535, 396);
             guna2HtmlLabel12.Margin = new Padding(3, 4, 3, 4);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             guna2HtmlLabel12.Size = new Size(51, 27);
@@ -181,7 +187,7 @@
             // 
             guna2HtmlLabel11.BackColor = Color.Transparent;
             guna2HtmlLabel11.Font = new Font("Microsoft Sans Serif", 12F);
-            guna2HtmlLabel11.Location = new Point(926, 82);
+            guna2HtmlLabel11.Location = new Point(1056, 213);
             guna2HtmlLabel11.Margin = new Padding(3, 4, 3, 4);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             guna2HtmlLabel11.Size = new Size(62, 27);
@@ -192,7 +198,7 @@
             // 
             guna2HtmlLabel10.BackColor = Color.Transparent;
             guna2HtmlLabel10.Font = new Font("Microsoft Sans Serif", 12F);
-            guna2HtmlLabel10.Location = new Point(1285, 82);
+            guna2HtmlLabel10.Location = new Point(83, 396);
             guna2HtmlLabel10.Margin = new Padding(3, 4, 3, 4);
             guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             guna2HtmlLabel10.Size = new Size(117, 27);
@@ -204,7 +210,7 @@
             guna2HtmlLabel9.BackColor = Color.Transparent;
             guna2HtmlLabel9.Font = new Font("Microsoft Sans Serif", 12F);
             guna2HtmlLabel9.ForeColor = Color.Black;
-            guna2HtmlLabel9.Location = new Point(49, 82);
+            guna2HtmlLabel9.Location = new Point(83, 217);
             guna2HtmlLabel9.Margin = new Padding(3, 4, 3, 4);
             guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             guna2HtmlLabel9.Size = new Size(138, 27);
@@ -222,14 +228,14 @@
             txtMaKH.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMaKH.Font = new Font("Segoe UI", 12F);
             txtMaKH.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaKH.Location = new Point(214, 77);
+            txtMaKH.Location = new Point(229, 212);
             txtMaKH.Margin = new Padding(5);
             txtMaKH.Name = "txtMaKH";
             txtMaKH.PasswordChar = '\0';
             txtMaKH.PlaceholderText = "";
             txtMaKH.SelectedText = "";
             txtMaKH.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtMaKH.Size = new Size(226, 36);
+            txtMaKH.Size = new Size(281, 36);
             txtMaKH.TabIndex = 7;
             // 
             // dtpNgayTao
@@ -243,13 +249,13 @@
             dtpNgayTao.Font = new Font("Segoe UI", 12F);
             dtpNgayTao.ForeColor = Color.Black;
             dtpNgayTao.Format = DateTimePickerFormat.Custom;
-            dtpNgayTao.Location = new Point(1016, 149);
+            dtpNgayTao.Location = new Point(1168, 387);
             dtpNgayTao.Margin = new Padding(3, 4, 3, 4);
             dtpNgayTao.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtpNgayTao.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtpNgayTao.Name = "dtpNgayTao";
             dtpNgayTao.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            dtpNgayTao.Size = new Size(266, 36);
+            dtpNgayTao.Size = new Size(281, 36);
             dtpNgayTao.TabIndex = 14;
             dtpNgayTao.Value = new DateTime(2025, 5, 24, 11, 17, 17, 437);
             // 
@@ -264,14 +270,14 @@
             txtTenKH.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenKH.Font = new Font("Segoe UI", 12F);
             txtTenKH.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenKH.Location = new Point(671, 77);
+            txtTenKH.Location = new Point(701, 212);
             txtTenKH.Margin = new Padding(5);
             txtTenKH.Name = "txtTenKH";
             txtTenKH.PasswordChar = '\0';
             txtTenKH.PlaceholderText = "";
             txtTenKH.SelectedText = "";
             txtTenKH.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtTenKH.Size = new Size(226, 36);
+            txtTenKH.Size = new Size(281, 36);
             txtTenKH.TabIndex = 8;
             // 
             // txtDiaChi
@@ -285,14 +291,14 @@
             txtDiaChi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDiaChi.Font = new Font("Segoe UI", 12F);
             txtDiaChi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDiaChi.Location = new Point(1016, 77);
+            txtDiaChi.Location = new Point(1168, 212);
             txtDiaChi.Margin = new Padding(5);
             txtDiaChi.Name = "txtDiaChi";
             txtDiaChi.PasswordChar = '\0';
             txtDiaChi.PlaceholderText = "";
             txtDiaChi.SelectedText = "";
             txtDiaChi.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtDiaChi.Size = new Size(238, 36);
+            txtDiaChi.Size = new Size(281, 36);
             txtDiaChi.TabIndex = 9;
             // 
             // txtEmail
@@ -306,14 +312,14 @@
             txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEmail.Font = new Font("Segoe UI", 12F);
             txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmail.Location = new Point(214, 149);
+            txtEmail.Location = new Point(701, 387);
             txtEmail.Margin = new Padding(5);
             txtEmail.Name = "txtEmail";
             txtEmail.PasswordChar = '\0';
             txtEmail.PlaceholderText = "";
             txtEmail.SelectedText = "";
             txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtEmail.Size = new Size(226, 36);
+            txtEmail.Size = new Size(281, 36);
             txtEmail.TabIndex = 10;
             // 
             // txtGhiChu
@@ -327,14 +333,14 @@
             txtGhiChu.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtGhiChu.Font = new Font("Segoe UI", 12F);
             txtGhiChu.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGhiChu.Location = new Point(671, 149);
+            txtGhiChu.Location = new Point(624, 542);
             txtGhiChu.Margin = new Padding(3, 5, 3, 5);
             txtGhiChu.Name = "txtGhiChu";
             txtGhiChu.PasswordChar = '\0';
             txtGhiChu.PlaceholderText = "";
             txtGhiChu.SelectedText = "";
             txtGhiChu.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtGhiChu.Size = new Size(226, 36);
+            txtGhiChu.Size = new Size(422, 36);
             txtGhiChu.TabIndex = 13;
             // 
             // txtSDT
@@ -348,14 +354,14 @@
             txtSDT.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSDT.Font = new Font("Segoe UI", 12F);
             txtSDT.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSDT.Location = new Point(1429, 77);
+            txtSDT.Location = new Point(229, 387);
             txtSDT.Margin = new Padding(3, 5, 3, 5);
             txtSDT.Name = "txtSDT";
             txtSDT.PasswordChar = '\0';
             txtSDT.PlaceholderText = "";
             txtSDT.SelectedText = "";
             txtSDT.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            txtSDT.Size = new Size(192, 36);
+            txtSDT.Size = new Size(281, 36);
             txtSDT.TabIndex = 11;
             // 
             // guna2GroupBox2
@@ -383,11 +389,11 @@
             guna2GroupBox2.CustomizableEdges = customizableEdges27;
             guna2GroupBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
             guna2GroupBox2.ForeColor = Color.Black;
-            guna2GroupBox2.Location = new Point(1, -1);
+            guna2GroupBox2.Location = new Point(0, 0);
             guna2GroupBox2.Margin = new Padding(3, 4, 3, 4);
             guna2GroupBox2.Name = "guna2GroupBox2";
             guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            guna2GroupBox2.Size = new Size(1643, 321);
+            guna2GroupBox2.Size = new Size(1643, 966);
             guna2GroupBox2.TabIndex = 37;
             guna2GroupBox2.Text = "Thông tin khách hàng";
             // 
@@ -405,11 +411,11 @@
             btnMoi.Font = new Font("Segoe UI", 9F);
             btnMoi.ForeColor = Color.Black;
             btnMoi.Image = Properties.Resources.refresh;
-            btnMoi.Location = new Point(1222, 222);
+            btnMoi.Location = new Point(1284, 748);
             btnMoi.Margin = new Padding(3, 4, 3, 4);
             btnMoi.Name = "btnMoi";
             btnMoi.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btnMoi.Size = new Size(119, 60);
+            btnMoi.Size = new Size(119, 70);
             btnMoi.TabIndex = 25;
             btnMoi.Text = "Làm mới";
             // 
@@ -427,11 +433,11 @@
             btnXoa.Font = new Font("Segoe UI", 9F);
             btnXoa.ForeColor = Color.Black;
             btnXoa.Image = Properties.Resources.delete;
-            btnXoa.Location = new Point(928, 222);
+            btnXoa.Location = new Point(943, 748);
             btnXoa.Margin = new Padding(3, 4, 3, 4);
             btnXoa.Name = "btnXoa";
             btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btnXoa.Size = new Size(119, 60);
+            btnXoa.Size = new Size(119, 70);
             btnXoa.TabIndex = 24;
             btnXoa.Text = "Xóa";
             // 
@@ -449,11 +455,11 @@
             btnSua.Font = new Font("Segoe UI", 9F);
             btnSua.ForeColor = Color.Black;
             btnSua.Image = Properties.Resources.repair;
-            btnSua.Location = new Point(634, 222);
+            btnSua.Location = new Point(602, 748);
             btnSua.Margin = new Padding(3, 4, 3, 4);
             btnSua.Name = "btnSua";
             btnSua.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            btnSua.Size = new Size(119, 60);
+            btnSua.Size = new Size(119, 70);
             btnSua.TabIndex = 23;
             btnSua.Text = "Sửa";
             // 
@@ -471,11 +477,11 @@
             btnThem.Font = new Font("Segoe UI", 9F);
             btnThem.ForeColor = Color.Black;
             btnThem.Image = Properties.Resources.add;
-            btnThem.Location = new Point(340, 222);
+            btnThem.Location = new Point(261, 748);
             btnThem.Margin = new Padding(3, 4, 3, 4);
             btnThem.Name = "btnThem";
             btnThem.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            btnThem.Size = new Size(119, 60);
+            btnThem.Size = new Size(119, 70);
             btnThem.TabIndex = 22;
             btnThem.Text = "Thêm";
             // 
@@ -489,11 +495,11 @@
             guna2GroupBox1.CustomizableEdges = customizableEdges29;
             guna2GroupBox1.Font = new Font("Segoe UI", 14F);
             guna2GroupBox1.ForeColor = Color.Black;
-            guna2GroupBox1.Location = new Point(1, 349);
+            guna2GroupBox1.Location = new Point(0, 0);
             guna2GroupBox1.Margin = new Padding(3, 4, 3, 4);
             guna2GroupBox1.Name = "guna2GroupBox1";
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            guna2GroupBox1.Size = new Size(1637, 677);
+            guna2GroupBox1.Size = new Size(1637, 978);
             guna2GroupBox1.TabIndex = 38;
             guna2GroupBox1.Text = "Danh Sách Khách Hàng";
             // 
@@ -529,7 +535,7 @@
             dgvDSKH.RowHeadersVisible = false;
             dgvDSKH.RowHeadersWidth = 51;
             dgvDSKH.RowTemplate.Height = 25;
-            dgvDSKH.Size = new Size(1636, 529);
+            dgvDSKH.Size = new Size(1636, 816);
             dgvDSKH.TabIndex = 25;
             dgvDSKH.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvDSKH.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -554,14 +560,46 @@
             dgvDSKH.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dgvDSKH.CellDoubleClick += dgvDSKH_CellDoubleClick_1;
             // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Font = new Font("Segoe UI", 12F);
+            tabControl1.Location = new Point(0, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1638, 1026);
+            tabControl1.TabIndex = 39;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(guna2GroupBox2);
+            tabPage1.Location = new Point(4, 37);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1630, 985);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Thông tin";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(guna2GroupBox1);
+            tabPage2.Location = new Point(4, 37);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1630, 985);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Danh sách";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
             // frmQuanLyKhachHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(236, 239, 241);
             ClientSize = new Size(1647, 1055);
-            Controls.Add(guna2GroupBox1);
-            Controls.Add(guna2GroupBox2);
+            Controls.Add(tabControl1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "frmQuanLyKhachHang";
             Text = "frmQuanLyKhachHang";
@@ -570,6 +608,9 @@
             guna2GroupBox2.PerformLayout();
             guna2GroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvDSKH).EndInit();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -597,5 +638,8 @@
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDSKH;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
     }
 }

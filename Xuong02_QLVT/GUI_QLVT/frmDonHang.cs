@@ -324,7 +324,7 @@ namespace GUI_QLVT
                 if (item.KhachHangID == idkhach)
                 {
                     khach = item;
-                    break;
+                    //break;
                 }
             }
 

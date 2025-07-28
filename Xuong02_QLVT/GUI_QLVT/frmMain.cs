@@ -32,7 +32,6 @@ namespace GUI_QLVT
                 lblUser.Text = AuthUtil.user.HoTen.ToString();
                 btnHome.Visible = true;
                 btnQLVatTu.Visible = true;
-                btnQLLoaiVatTu.Visible = true;
                 //btnQLTTVatTu.Visible = true;
                 btnQLKhachHang.Visible = true;
                 btnQLNhanVien.Visible = true;
@@ -40,8 +39,6 @@ namespace GUI_QLVT
                 btnHoaDon.Visible = true;
                 btnQLDonHang.Visible = true;
                 btnDoiMatKhau.Visible = true;
-                btnQLVoucher.Visible = true;
-
                 if (AuthUtil.user.VaiTro == false)
                 {
                     VaiTroNhanVien();
@@ -51,7 +48,6 @@ namespace GUI_QLVT
             {
                 btnHome.Visible = true;
                 btnQLVatTu.Visible = false;
-                btnQLLoaiVatTu.Visible = false;
                 //btnQLTTVatTu.Visible = false;
                 btnQLKhachHang.Visible = false;
                 btnQLNhanVien.Visible = false;
@@ -59,7 +55,6 @@ namespace GUI_QLVT
                 btnHoaDon.Visible = false;
                 btnQLDonHang.Visible = false;
                 btnDoiMatKhau.Visible = false;
-                btnQLVoucher.Visible = false;
             }
         }
         private Form currentFormChild;
@@ -99,12 +94,6 @@ namespace GUI_QLVT
             lblTenForm.Text = "QUẢN LÍ TRẠNG THÁI VẬT TƯ";
         }
 
-        private void btnQLLoaiVatTu_Click(object sender, EventArgs e)
-        {
-            openChildForm(new frmQLLoaiVatTu());
-            lblTenForm.Text = "QUẢN LÍ LOẠI VẬT TƯ";
-        }
-
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -121,8 +110,7 @@ namespace GUI_QLVT
 
         private void btnQLNhaCungCap_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmQuanLyNhaCungCap());
-            lblTenForm.Text = "QUẢN LÍ NHÀ CUNG CẤP";
+
         }
 
         private void btnQLKhachHang_Click(object sender, EventArgs e)
@@ -148,20 +136,21 @@ namespace GUI_QLVT
             openChildForm(new frmDonHang());
             lblTenForm.Text = "QUẢN LÍ ĐƠN HÀNG";
         }
-        private void btnQLVoucher_Click(object sender, EventArgs e)
-        {
-            openChildForm(new frmVoucher());
-            lblTenForm.Text = "QUẢN LÍ VOUCHER";
-        }
         private void btnQLPhieuNhap_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmVoucher());
+            openChildForm(new frmPhieuNhapKho());
             lblTenForm.Text = "QUẢN LÍ PHIẾU NHẬP KHO";
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }  
+        }
+
+        private void btnQLNhaCungCap_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new frmQuanLyNhaCungCap());
+            lblTenForm.Text = "QUẢN LÍ NHÀ CUNG CẤP";
+        }
     }
 }

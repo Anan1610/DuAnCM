@@ -41,6 +41,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             btnGuiMa = new Guna.UI2.WinForms.Guna2Button();
@@ -49,10 +53,14 @@
             txtMatKhauMoi = new Guna.UI2.WinForms.Guna2TextBox();
             txtMaXacNhan = new Guna.UI2.WinForms.Guna2TextBox();
             btnDoiMatKhau = new Guna.UI2.WinForms.Guna2Button();
-            label5 = new Label();
-            label4 = new Label();
+            lblXacNhanMatKhau = new Label();
+            lblMatKhauMoi = new Label();
             label3 = new Label();
             label2 = new Label();
+            btnXacNhanMa = new Guna.UI2.WinForms.Guna2Button();
+            btnThoat = new Guna.UI2.WinForms.Guna2Button();
+            chkHienThi1 = new CheckBox();
+            chkHienThi2 = new CheckBox();
             SuspendLayout();
             // 
             // panel1
@@ -190,7 +198,7 @@
             btnDoiMatKhau.FillColor = Color.White;
             btnDoiMatKhau.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
             btnDoiMatKhau.ForeColor = Color.Black;
-            btnDoiMatKhau.Location = new Point(1503, 636);
+            btnDoiMatKhau.Location = new Point(1314, 709);
             btnDoiMatKhau.Name = "btnDoiMatKhau";
             btnDoiMatKhau.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnDoiMatKhau.Size = new Size(165, 36);
@@ -198,27 +206,27 @@
             btnDoiMatKhau.Text = "Đổi mật khẩu";
             btnDoiMatKhau.Click += btnDoiMatKhau_Click;
             // 
-            // label5
+            // lblXacNhanMatKhau
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label5.ForeColor = Color.Cyan;
-            label5.Location = new Point(935, 635);
-            label5.Name = "label5";
-            label5.Size = new Size(194, 28);
-            label5.TabIndex = 13;
-            label5.Text = "Xác nhận mật khẩu";
+            lblXacNhanMatKhau.AutoSize = true;
+            lblXacNhanMatKhau.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblXacNhanMatKhau.ForeColor = Color.Cyan;
+            lblXacNhanMatKhau.Location = new Point(935, 635);
+            lblXacNhanMatKhau.Name = "lblXacNhanMatKhau";
+            lblXacNhanMatKhau.Size = new Size(194, 28);
+            lblXacNhanMatKhau.TabIndex = 13;
+            lblXacNhanMatKhau.Text = "Xác nhận mật khẩu";
             // 
-            // label4
+            // lblMatKhauMoi
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.ForeColor = Color.Cyan;
-            label4.Location = new Point(935, 531);
-            label4.Name = "label4";
-            label4.Size = new Size(145, 28);
-            label4.TabIndex = 12;
-            label4.Text = "Mật khẩu mới";
+            lblMatKhauMoi.AutoSize = true;
+            lblMatKhauMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblMatKhauMoi.ForeColor = Color.Cyan;
+            lblMatKhauMoi.Location = new Point(935, 531);
+            lblMatKhauMoi.Name = "lblMatKhauMoi";
+            lblMatKhauMoi.Size = new Size(145, 28);
+            lblMatKhauMoi.TabIndex = 12;
+            lblMatKhauMoi.Text = "Mật khẩu mới";
             // 
             // label3
             // 
@@ -242,12 +250,79 @@
             label2.TabIndex = 41;
             label2.Text = "Quên Mật Khẩu";
             // 
+            // btnXacNhanMa
+            // 
+            btnXacNhanMa.BorderRadius = 15;
+            btnXacNhanMa.CustomizableEdges = customizableEdges13;
+            btnXacNhanMa.DisabledState.BorderColor = Color.DarkGray;
+            btnXacNhanMa.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnXacNhanMa.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnXacNhanMa.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnXacNhanMa.FillColor = Color.White;
+            btnXacNhanMa.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnXacNhanMa.ForeColor = Color.Black;
+            btnXacNhanMa.Location = new Point(1503, 419);
+            btnXacNhanMa.Name = "btnXacNhanMa";
+            btnXacNhanMa.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnXacNhanMa.Size = new Size(165, 36);
+            btnXacNhanMa.TabIndex = 42;
+            btnXacNhanMa.Text = "Xác nhận mã";
+            btnXacNhanMa.Click += btnXacNhanMa_Click;
+            // 
+            // btnThoat
+            // 
+            btnThoat.BorderRadius = 10;
+            btnThoat.CustomizableEdges = customizableEdges15;
+            btnThoat.DefaultAutoSize = true;
+            btnThoat.DisabledState.BorderColor = Color.DarkGray;
+            btnThoat.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnThoat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnThoat.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnThoat.FillColor = Color.Red;
+            btnThoat.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnThoat.ForeColor = Color.Black;
+            btnThoat.Location = new Point(1561, 849);
+            btnThoat.Name = "btnThoat";
+            btnThoat.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnThoat.Size = new Size(88, 39);
+            btnThoat.TabIndex = 43;
+            btnThoat.Text = "Thoát";
+            btnThoat.Click += btnThoat_Click;
+            // 
+            // chkHienThi1
+            // 
+            chkHienThi1.AutoSize = true;
+            chkHienThi1.Font = new Font("Segoe UI", 15F);
+            chkHienThi1.Location = new Point(1523, 531);
+            chkHienThi1.Name = "chkHienThi1";
+            chkHienThi1.Size = new Size(123, 39);
+            chkHienThi1.TabIndex = 48;
+            chkHienThi1.Text = "Hiển thị";
+            chkHienThi1.UseVisualStyleBackColor = true;
+            chkHienThi1.CheckedChanged += chkHienThi1_CheckedChanged;
+            // 
+            // chkHienThi2
+            // 
+            chkHienThi2.AutoSize = true;
+            chkHienThi2.Font = new Font("Segoe UI", 15F);
+            chkHienThi2.Location = new Point(1523, 629);
+            chkHienThi2.Name = "chkHienThi2";
+            chkHienThi2.Size = new Size(123, 39);
+            chkHienThi2.TabIndex = 49;
+            chkHienThi2.Text = "Hiển thị";
+            chkHienThi2.UseVisualStyleBackColor = true;
+            chkHienThi2.CheckedChanged += chkHienThi2_CheckedChanged;
+            // 
             // frmQuenMatKhau
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
             ClientSize = new Size(1680, 922);
+            Controls.Add(chkHienThi2);
+            Controls.Add(chkHienThi1);
+            Controls.Add(btnThoat);
+            Controls.Add(btnXacNhanMa);
             Controls.Add(label2);
             Controls.Add(txtXacNhanMatKhau);
             Controls.Add(txtEmail);
@@ -256,14 +331,15 @@
             Controls.Add(txtMaXacNhan);
             Controls.Add(btnDoiMatKhau);
             Controls.Add(panel1);
-            Controls.Add(label5);
+            Controls.Add(lblXacNhanMatKhau);
             Controls.Add(label1);
-            Controls.Add(label4);
+            Controls.Add(lblMatKhauMoi);
             Controls.Add(label3);
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
             Name = "frmQuenMatKhau";
             Text = "frmQuenMatKhau";
+            Load += frmQuenMatKhau_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -278,9 +354,13 @@
         private Guna.UI2.WinForms.Guna2TextBox txtMatKhauMoi;
         private Guna.UI2.WinForms.Guna2TextBox txtMaXacNhan;
         private Guna.UI2.WinForms.Guna2Button btnDoiMatKhau;
-        private Label label5;
-        private Label label4;
+        private Label lblXacNhanMatKhau;
+        private Label lblMatKhauMoi;
         private Label label3;
         private Label label2;
+        private Guna.UI2.WinForms.Guna2Button btnXacNhanMa;
+        private Guna.UI2.WinForms.Guna2Button btnThoat;
+        private CheckBox chkHienThi1;
+        private CheckBox chkHienThi2;
     }
 }
